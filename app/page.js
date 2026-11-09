@@ -6,7 +6,7 @@ export default function Home() {
     <main className="home">
       <section className="hero">
         <div className="heroText">
-          <p className="kicker">영유아교육디자인연구소</p>
+          <p className="kicker"><span>제작자: 영유아교육디자인연구소</span> <span>WITH 음악치료사 이혜진,</span> <span>필라테스&amp;웰니스 강사 박예나</span></p>
           <h1>영유아 몸과 마음을 조율하는<br />신체놀이 프로그램</h1>
           <p className="lead">숨을 고르고, 몸을 깨우고, 친구와 소리를 맞추며<br />아이들이 스스로 몸과 마음을 조절해 가요.</p>
         </div>
