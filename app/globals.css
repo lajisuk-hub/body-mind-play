@@ -71,3 +71,18 @@ img{display:block;max-width:100%}
 .cnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 6px}
 .cnav a{display:inline-flex;align-items:center;background:#fff;border-radius:24px;padding:10px 18px;font-weight:700;color:#5d4a86;box-shadow:0 4px 14px rgba(90,60,150,.1)}
 .foot{text-align:center;padding:26px 16px 30px;font-size:14px;color:#8d7cad;font-weight:700}
+
+/* 활동1 이어하기 */
+.tabs2{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.tabs2 button{font-family:'Jua';font-size:17px;border:0;cursor:pointer;padding:8px 16px;border-radius:20px;background:#f0e8ff;color:#8a63cf}
+.tabs2 button.on{background:#a88be0;color:#fff}
+.askWrap{position:relative}
+.askBox{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:rgba(60,40,110,.72);padding:16px;text-align:center}
+.askQ{font-family:'Jua';color:#fff;font-size:clamp(22px,4vw,40px);line-height:1.35}
+.askBtns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.askBtns button{font-family:'Jua';font-size:clamp(17px,2.4vw,22px);border:0;cursor:pointer;padding:12px 26px;border-radius:30px}
+.askBtns .yes{background:#ffb84d;color:#4b3487}
+.askBtns .nope{background:#fff;color:#7b6a9e}
+.askBtns button{white-space:nowrap}
+@media (max-width:640px){.askBox{gap:10px}.askQ{font-size:19px}.askBtns{gap:8px}.askBtns button{font-size:15px;padding:8px 14px}}
+.askBox{z-index:3;background:rgba(60,40,110,.92)}

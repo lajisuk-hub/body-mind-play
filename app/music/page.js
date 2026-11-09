@@ -1,5 +1,6 @@
 import { Top, Video, ChapterNav } from '../parts';
 import { MUSIC } from '../content';
+import TempoPlayer from '../TempoPlayer';
 
 export const metadata = { title: '사회정서 협동 프로그램(악기연주) · 신체놀이 프로그램' };
 
@@ -11,8 +12,8 @@ export default function Music() {
 
       <section className="block">
         <h3><span className="step">활동 1</span> 음악을 듣고 내 몸을 조절해요</h3>
-        <p>음악 선생님의 설명을 듣고, 음악이 흐르면 <b>속도에 맞춰 까딱까딱</b>, 음악이 길게 멈추면 <b>그대로 멈춰요</b>.</p>
-        <Video {...MUSIC.tempo} />
+        <p>음악 선생님의 설명을 듣고, 음악이 흐르면 <b>속도에 맞춰 까딱까딱</b>, 음악이 길게 멈추면 <b>그대로 멈춰요</b>.<br />영상이 끝나면 <b>다른 음악</b>으로 이어서 자유롭게 움직여 볼 수 있어요.</p>
+        <TempoPlayer first={MUSIC.tempo} next={MUSIC.free} />
       </section>
 
       <section className="block">

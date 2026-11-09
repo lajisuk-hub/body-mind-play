@@ -27,6 +27,7 @@ export const STRETCH_VIDEO = null;
 
 export const MUSIC = {
   tempo: { src: '/videos/tempo.mp4', poster: '/videos/tempo.jpg' },
+  free: { src: '/videos/free.mp4', poster: '/videos/free.jpg' },
   steps: [
     { k: 'bear', no: '①', title: '곰 세 마리 — 곰이 나오면 내 악기 소리!', src: '/videos/bear.mp4', poster: '/videos/bear.jpg',
       tip: '노래 속 「곰」이 나올 때만 악기를 연주해요. 자기 차례에 소리 내고, 다른 구절에서는 기다리며 시작과 멈춤을 연습해요.' },
