@@ -19,8 +19,8 @@ export default function Breath() {
 
       <section className="block">
         <h3><span className="step">STEP 2</span> 영상을 보며 호흡 자세를 배워요</h3>
-        <p>영상을 열람하고, 영상을 보며 호흡 자세를 배워요.</p>
-        <Video src={BREATH_VIDEO} empty="호흡 자세 영상이 준비되면 이곳에서 바로 볼 수 있어요." />
+        <p>영상을 열람하고, 영상을 보며 호흡 자세를 배워요.<br /><b>① 기초 호흡 → ② 휴지 불기 → ③ 거북이 호흡 → ④ 나비 호흡</b> 순서로 이어져요.</p>
+        <Video src={BREATH_VIDEO} poster="/videos/breath.jpg" empty="호흡 자세 영상이 준비되면 이곳에서 바로 볼 수 있어요." />
       </section>
 
       <section className="block two">
