@@ -23,7 +23,7 @@ export const BREATH_SITE = 'https://kids-breathing.vercel.app';
 // 다른 선생님이 만든 호흡 자세 영상 — 파일을 받으면 '/videos/breath-pose.mp4' 처럼 넣기
 export const BREATH_VIDEO = '/videos/breath.mp4';
 // 원장님이 만든 스트레칭 영상 — 파일을 받으면 '/videos/stretch.mp4' 처럼 넣기
-export const STRETCH_VIDEO = null;
+export const STRETCH_VIDEO = '/videos/stretch.mp4';
 
 export const MUSIC = {
   tempo: { src: '/videos/tempo.mp4', poster: '/videos/tempo.jpg' },

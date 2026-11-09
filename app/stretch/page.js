@@ -11,7 +11,8 @@ export default function Stretch() {
 
       <section className="block">
         <h3>영상을 보고 우리 몸을 알아차려 봐요!</h3>
-        <Video src={STRETCH_VIDEO} empty="스트레칭 영상이 준비되면 이곳에서 바로 볼 수 있어요." />
+        <p>등·하원 전에 할 수 있는 <b>키쭉쭉 스트레칭</b>이에요. 제목이 나오면 잠깐 멈추고, 제목이 사라지면 함께 따라 해요.<br /><b>발목 까딱까딱 → 바닥 찍고 기지개 → 옆구리 스트레칭 → 어깨 돌리기 → 어깨 크게 돌리기</b></p>
+        <Video src={STRETCH_VIDEO} poster="/videos/stretch.jpg" empty="스트레칭 영상이 준비되면 이곳에서 바로 볼 수 있어요." />
         <div className="callout">
           <span>💡</span>
           <p><b>빠르게 하기보다, 자세를 정확하게 하는 것이 중요합니다!</b><br />천천히 따라 하며 내 몸이 어디가 늘어나는지 느껴 보세요.</p>
