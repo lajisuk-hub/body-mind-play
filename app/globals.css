@@ -1,0 +1,73 @@
+:root{--ink:#3d2f63;--soft:#7b6a9e;--bg:#fbf6ff;--card:#fff;--line:#ece3f8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gowun Dodum',sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff7ef 0%,#f7f0ff 40%,#eef8f4 100%) fixed;min-height:100vh}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* 첫 화면 */
+.home{max-width:1100px;margin:0 auto;padding:20px 16px 10px}
+.hero{position:relative;border-radius:30px;overflow:hidden;box-shadow:0 18px 50px rgba(90,60,150,.18)}
+.hero img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 70%}
+.hero{background:#fffaf4}
+.heroText{position:relative;padding:clamp(22px,4vw,40px) 16px clamp(16px,2.4vw,24px);text-align:center;
+  background:linear-gradient(180deg,#fffaf4 0%,#fff3e8 100%)}
+.kicker{display:inline-block;font-weight:700;font-size:clamp(12px,1.8vw,16px);color:#9a7bc9;background:#fff;padding:4px 16px;border-radius:20px}
+.hero h1{font-family:'Jua';font-weight:400;font-size:clamp(24px,4.6vw,52px);line-height:1.22;margin:10px 0 8px;color:#4b3487;text-shadow:0 3px 0 #fff}
+.lead{font-size:clamp(13px,1.9vw,19px);line-height:1.6;color:#5d4a86;font-weight:700}
+@media (max-width:640px){.hero img{aspect-ratio:4/3}}
+.pick{text-align:center;margin:30px 0 14px;font-family:'Jua';font-size:clamp(20px,3vw,26px);color:var(--soft)}
+.chapters{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.chapters{grid-template-columns:1fr}}
+.chap{display:flex;flex-direction:column;background:var(--card);border-radius:26px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(90,60,150,.12);border:3px solid transparent;transition:transform .2s,border-color .2s}
+.chap:hover,.chap:focus-visible{transform:translateY(-5px);border-color:var(--c)}
+.chapImg img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.chapBody{position:relative;padding:20px 20px 22px}
+.num{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;
+  background:var(--c,#a88be0);color:#fff;font-family:'Jua';font-size:24px;margin-right:10px;flex:none}
+.num.sm{width:28px;height:28px;font-size:16px;margin-right:8px}
+.chapBody .num{position:absolute;top:-24px;left:18px;width:48px;height:48px;font-size:28px;border:4px solid #fff}
+.chap h2{font-family:'Jua';font-weight:400;font-size:clamp(23px,2.6vw,27px);margin-top:12px}
+.chap h2 small{display:block;font-size:.7em;color:var(--soft);margin-top:2px}
+.chap p{margin-top:6px;line-height:1.55;color:var(--soft);font-size:16px}
+.go{display:inline-block;margin-top:14px;font-family:'Jua';font-size:18px;color:#fff;background:var(--c);padding:8px 20px;border-radius:24px}
+
+/* 챕터 화면 */
+.page{max-width:920px;margin:0 auto;padding:16px 16px 10px}
+.top{display:flex;flex-direction:column;gap:12px;margin-bottom:10px}
+.back{align-self:flex-start;font-weight:700;color:var(--soft);background:#fff;padding:8px 16px;border-radius:20px;box-shadow:0 3px 10px rgba(90,60,150,.1)}
+.topTitle{display:flex;align-items:center;font-family:'Jua';font-size:clamp(26px,4.4vw,40px);color:#4b3487}
+.topTitle .num{background:var(--c);width:50px;height:50px;font-size:30px}
+.intro{font-size:18px;line-height:1.65;color:var(--soft);margin:4px 0 18px}
+.block{background:#fff;border-radius:26px;padding:clamp(18px,3vw,28px);margin-bottom:18px;box-shadow:0 8px 26px rgba(90,60,150,.09)}
+.block h3{font-family:'Jua';font-weight:400;font-size:clamp(22px,3.2vw,28px);color:#4b3487;margin-bottom:8px;line-height:1.35}
+.block > p{font-size:17px;line-height:1.65;color:#5d4a86;margin-bottom:14px}
+.step{display:inline-block;font-size:.62em;vertical-align:middle;background:#f0e8ff;color:#8a63cf;padding:4px 12px;border-radius:14px;margin-right:6px}
+.bigBtn{display:inline-flex;align-items:center;gap:10px;font-family:'Jua';font-size:clamp(20px,3vw,26px);color:#fff;
+  background:linear-gradient(135deg,#6ac2a0,#4aa5c9);padding:14px 30px;border-radius:40px;box-shadow:0 8px 20px rgba(74,165,201,.35)}
+.bigBtn:hover{transform:translateY(-2px)}
+.vbox{border-radius:20px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.vbox video{width:100%;height:100%;display:block}
+.vbox.empty{background:repeating-linear-gradient(45deg,#faf6ff,#faf6ff 14px,#f3ecfd 14px,#f3ecfd 28px);display:flex;align-items:center;justify-content:center;text-align:center;border:3px dashed #d9c9f3;box-shadow:none}
+.vbox.empty b{font-family:'Jua';font-weight:400;font-size:24px;color:#8a63cf}
+.vbox.empty p{color:var(--soft);margin-top:4px;padding:0 16px}
+.emIcon{font-size:44px}
+.callout{display:flex;gap:12px;align-items:flex-start;margin-top:16px;background:#fff4e6;border-radius:18px;padding:16px 18px}
+.callout span{font-size:30px}
+.callout p{line-height:1.6;color:#7a5323;font-size:17px}
+.callout b{font-size:19px;color:#c4621c}
+.list{padding-left:22px;line-height:1.75;color:#5d4a86;font-size:17px}
+.list li{margin-bottom:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:none;box-shadow:none;padding:0}
+@media (max-width:700px){.two{grid-template-columns:1fr}}
+.mini{background:#fff;border-radius:22px;padding:20px;box-shadow:0 8px 26px rgba(90,60,150,.09)}
+.mini h4{font-family:'Jua';font-weight:400;font-size:23px;margin-bottom:6px}
+.mini p{line-height:1.6;color:#5d4a86}
+.tip{margin-top:10px;font-size:15.5px;line-height:1.6;color:#6d5b91;background:#f7f2ff;border-radius:14px;padding:10px 14px}
+.tip b{color:#8a63cf;margin-right:4px}
+.steps{display:grid;gap:22px}
+.stepCard h4{font-family:'Jua';font-weight:400;font-size:clamp(19px,2.8vw,24px);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.no{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#a88be0;color:#fff;font-size:20px;flex:none}
+.cnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 6px}
+.cnav a{display:inline-flex;align-items:center;background:#fff;border-radius:24px;padding:10px 18px;font-weight:700;color:#5d4a86;box-shadow:0 4px 14px rgba(90,60,150,.1)}
+.foot{text-align:center;padding:26px 16px 30px;font-size:14px;color:#8d7cad;font-weight:700}
